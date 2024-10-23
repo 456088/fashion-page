@@ -1,0 +1,334 @@
+
+ *{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+  }
+  
+  body {
+    box-sizing: border-box;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    align-items: center;
+    padding: 0% 100px;
+  }
+  
+  nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+  
+  .headerIcons {
+    display: flex;
+    gap: 30px;
+  }
+  
+  /* ......................................Hero Section................................  */
+  
+  main {
+    display: flex;
+    background-color: whitesmoke;
+    height: 85vh;
+  }
+  
+  .heroBg {
+    background-image: url("./images/landing.png");
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+  }
+  
+  .heroBg img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .heroText {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .heroText h1 {
+    font-size: 60px;
+    font-weight: 900;
+  }
+  
+  .heroText span {
+    font-size: 20px;
+  }
+  
+  .heroText button {
+    background-color: rgb(20, 19, 19);
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .newShoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+    background-color: #f8f9fb;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  .newShoes h1 {
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .newShoes button {
+    color: white;
+    background-color: #353a40;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .newShoes button:hover {
+    background-color: black;
+  }
+  
+  .mostRated {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    max-width: 960px;
+  }
+  
+  .mostRated .mostRatedItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 5px;
+  }
+  
+  .mostRatedItems figure {
+    background-color: #f8f9fb;
+  }
+  
+  .mostRatedItems figcaption {
+    background-color: white;
+    text-align: left;
+  }
+  
+  .mostRatedText {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    text-decoration: 4px underline red;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  
+  .popular {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 10px 10px;
+    margin: 0 auto;
+    max-width: fit-content;
+    max-height: fit-content;
+    gap: 30px;
+  }
+  
+  .popular img {
+    width: 280px;
+    height: 320px;
+  }
+  
+  .popularText {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    font-size: 20px;
+    margin-left: 10%;
+    margin-bottom: 60px;
+    border-left: 3px solid red;
+    padding: 0px 20px;
+    text-decoration: solid;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    height: 4vh;
+  }
+  
+  .popular figure {
+    background-color: #f8f9fb;
+  }
+  
+  .popular figcaption {
+    background-color: white;
+  }
+  
+  .models1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /* margin: 10% 10%; */
+    max-width: 960px;
+    margin: 7%;
+    /* justify-items: center; */
+    padding: 10px;
+    gap: 15px;
+    align-content: center;
+  }
+  
+  .models1 .woman1 {
+    position: relative;
+    grid-row: 1/3;
+    grid-column: 1/3;
+    background-color: #f8f9fb;
+    padding-left: 100px;
+    padding-right: 130px;
+  }
+  
+  .models1 .woman2 {
+    position: relative;
+    background-color: #f8f9fb;
+    padding: 0px 20px;
+  }
+  
+  .models1 .woman3 {
+    position: relative;
+    background-color: #f8f9fb;
+    padding: 0px 52px;
+  }
+  
+  .woman2 .centerText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px 30px;
+  }
+  
+  .woman3 .centerText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px 30px;
+  }
+  
+  .woman1 .centerText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px 30px;
+  }
+  
+  .centerText:hover {
+    background-color: black;
+    color: white;
+    transition: 500ms linear;
+    cursor: pointer;
+  }
+  
+  .discover {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    font-size: 20px;
+    margin-left: 10%;
+    margin-top: 40px;
+    border-left: 5px solid red;
+    padding: 0px 10px;
+    text-decoration: solid;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10%;
+  }
+  
+  .footer1 {
+    line-height: 25px;
+  }
+  
+  .footer2 {
+    gap: 50px;
+  }
+  
+  .footer2 a {
+    text-decoration: none;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    line-height: 30px;
+    color: gray;
+    margin: 5px;
+  }
+  
+  .footer3 {
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+  }
+  
+  .footer3 a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .email-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    padding-right: 30px;
+    width: 290px;
+  }
+  .email-input {
+    border: none;
+    flex-grow: 1;
+    padding: 8px;
+    font-size: 16px;
+    outline: none;
+  }
+  .send-button {
+    background-color: rgb(196, 59, 59);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .send-button:hover {
+    background-color: #a01e24;
+  }
+  
+  .footer4 {
+    text-align: center;
+    color: gray;
+    height: 7vh;
+    font-size: large;
+  }
